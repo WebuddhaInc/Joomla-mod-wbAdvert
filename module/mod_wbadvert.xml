@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+
+  <name>wbAdvert</name>
+  <author>Webuddha.com</author>
+  <creationDate>2013-03-28</creationDate>
+  <copyright>(c)2007-2013 Webuddha.com, Holodyn Corporation</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>wbadvert@webuddha.com</authorEmail>
+  <authorUrl>http://software.webuddha.com</authorUrl>
+  <version>2.3.0</version>
+  <description>wbAdvert Advertisement Display Module</description>
+
+  <files>
+    <filename module="mod_wbadvert">mod_wbadvert.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB.mod_wbadvert.ini</language>
+    <language tag="en-GB">en-GB.mod_wbadvert.sys.ini</language>
+  </languages>
+
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="cat_strict" type="list" default="" label="MOD_WBADVERT_PN_CAT_STRICT" description="MOD_WBADVERT_PD_CAT_STRICT">
+          <option value="">Auto</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="show_alert" type="list" default="" label="MOD_WBADVERT_PN_SHOW_ALERT" description="MOD_WBADVERT_PD_SHOW_ALERT">
+          <option value="">Auto</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="wrap_module" type="list" default="" label="MOD_WBADVERT_PN_WRAP_MODULE" description="MOD_WBADVERT_PD_WRAP_MODULE">
+          <option value="">Auto</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="wrap_advert" type="list" default="" label="MOD_WBADVERT_PN_WRAP_ADVERT" description="MOD_WBADVERT_PD_WRAP_ADVERT">
+          <option value="">Auto</option>
+          <option value="0">No</option>
+          <option value="1">Yes</option>
+        </field>
+        <field name="min_size" type="text" default="" label="Minimum Size (w,h)" description="Specify the MIN Width and Height (ie: 120,90)" />
+        <field name="max_size" type="text" default="" label="Maximum Size (w,h)" description="Specify the MAX Width and Height (ie: 240,120)" />
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+        <field name="cachemode" type="hidden" default="static">
+          <option value="static"></option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+
+</extension>
