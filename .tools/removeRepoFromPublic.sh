@@ -57,4 +57,5 @@
 # remove
 
   rm $AJPATH/modules/mod_wbadvert
-
+  rm $AJPATH/language/en-GB en-GB.mod_wbadvert.ini
+  rm $AJPATH/language/en-GB en-GB.mod_wbadvert.sys.ini

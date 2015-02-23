@@ -87,3 +87,8 @@
 
   doRepoLink module modules mod_wbadvert
 
+# module/language/en-GB -> /language/en-GB
+
+  doRepoLink module/language/en-GB/en-GB.$REPONAME.ini language/en-GB en-GB.$REPONAME.ini
+  doRepoLink module/language/en-GB/en-GB.$REPONAME.sys.ini language/en-GB en-GB.$REPONAME.sys.ini
+
