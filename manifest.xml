@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+  <update>
+    <name>wbAdvert Module Extension</name>
+    <description>wbAdvert Module Extension for Joomla! CMS</description>
+    <element>mod_wbadvert</element>
+    <type>module</type>
+    <version>3.0.0</version>
+    <client>administrator</client>
+    <infourl title="wbAdvert Component Extension">https://github.com/WebuddhaInc/Joomla-mod-wbAdvert/releases/tag/3.0.0</infourl>
+    <downloads>
+      <downloadurl type="full" format="zip">https://github.com/WebuddhaInc/Joomla-mod-wbAdvert/releases/download/3.0.0/mod_wbadvert_3.0.0.zip</downloadurl>
+    </downloads>
+    <targetplatform name="joomla" version="3.4" />
+  </update>
+</updates>
